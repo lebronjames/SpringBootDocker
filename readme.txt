@@ -64,3 +64,14 @@ docker kill b54b05cc210d
 docker rmi -f migu/springboot
 service docker restart
 docker run --net=host test3 #docker使用的网络实际上和宿主机一样
+
+8). 查看容器进程
+docker top可以查看运行容器中运行的进程 
+docker ps查看一下运行的容器 
+
+9). 查看容器信息
+docker inspect 容器名/容器ID
+
+10). 进入容器执行命令
+docker exec -it 容器名 /bin/bash
+
